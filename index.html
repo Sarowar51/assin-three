@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en"
+data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/b08c72a2a7.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<style>
+  .for-col{
+    color:orangered;
+  }
+
+  @media screen and (max-width:600px){
+    .our-view{
+      display:flex;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+    }
+    .footer-menu a{
+     color:red;
+     display:block;
+    }
+  }
+</style>
+<body>
+    <header class="md:container md:mx-auto">
+        <!-- nav -->
+          <div class="navbar bg-[#F85559] rounded-full">
+            <div class="">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ">
+                  <li><a>home</a></li>
+                  <li><a>shop</a></li>
+                  <li><a>News</a></li>
+                  <li><a>Contact</a></li>
+               
+                </ul>
+              </div>
+           <div>
+             
+           </div>
+             
+            </div>
+
+            <div>
+              
+            </div>
+          
+
+           <div class="gap-x-20 justify-center">
+            <div class="navbar-center hidden lg:flex ">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>news</a></li>
+                <li><a>Contact</a></li>
+               
+              </ul>
+            </div>
+            <div class="flex gap-3 items-center">
+              <img class="w-14" src="logo.png" alt="">
+              <h2 class="text-4xl font-bold text-white">Fruits Ninja</h2>
+            </div>
+
+              <div class="lg:flex md:hidden">
+                <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+              </div>
+           </div>
+       
+
+
+          
+          </div> 
+          
+
+       
+    
+  
+          <div class="carousel w-full py-5 md:w-auto ">
+
+
+            <div id="slide1" class="carousel-item relative w-full">
+          
+           <div class="hero backdrop-opacity-0" style="background-image: url(banner1.png);">
+            <div class="hero-overlay "></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                <p class="mb-5">We supply highly quality organic products</p>
+                <button class="btn bg-[#F85559] text-white rounded-xl border-0">Shop Now</button>
+              </div>
+                 </div>
+                </div>
+             
+
+                 <!-- end  -->
+             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+                
+              </div>
+              
+              
+            </div> 
+
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="hero min-h-screen" style="background-image: url(banner2.png);">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                      <div class="">
+                        <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                        <p class="mb-5">We supply highly quality organic products</p>
+                        <button class="btn bg-[#F85559] text-white">Shop Now</button>
+                      </div>
+                         </div>
+                        </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+
+
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="hero min-h-screen" style="background-image: url(banner3.png);">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                      <div class="">
+                        <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                        <p class="mb-5">We supply highly quality organic products</p>
+                        <button class="btn bg-[#F85559] text-white">Shop Now</button>
+                      </div>
+                         </div>
+                        </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="hero min-h-screen" style="background-image: url(banner4.png);">
+                    <div class="hero-overlay bg-opacity-60"></div>
+                    <div class="hero-content text-center text-neutral-content">
+                      <div class="">
+                        <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                        <p class="mb-5">We supply highly quality organic products</p>
+                        <button class="btn bg-[#F85559] text-white">Shop Now</button>
+                      </div>
+                         </div>
+                        </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+
+          <section class="w-1/2 m-auto relative -top-16 ">
+            <div class="grid lg:grid-cols-5 bg-white items-center justify-center text-center rounded-lg">
+              <div>
+                <img class="w-36" src="fruit1.png" alt="">
+                <p class="text-black">Strawberry</p>
+              </div>
+              <!--  -->
+              <div class="">
+                <img class="w-36" src="fruit2.png" alt="">
+                <p class="text-black text-justify">Orange</p>
+              </div>
+              <!--  -->
+              <div class="">
+                <img class="w-36" src="fruit3.png" alt="">
+                <p class="text-black">Mango</p>
+              </div>
+              <!--  -->
+              <div class="">
+                <img class="w-36" src="fruit4.png" alt="">
+                <p class="text-black">Strawberry</p>
+              </div>
+              <!--  -->
+              <div class="">
+                <img class="w-36" src="fruit5.png" alt="">
+                <p class="text-black">Mango</p>
+              </div>
+
+            </div>
+
+          </section>
+        
+         
+
+        
+    </header>
+     
+              
+    <main class="md:container md:mx-auto">
+        <section class="my-20">
+            <div class="flex justify-between flex-col lg:flex-row md:flex-row">
+                <div class="space-y-3 md:my-10">
+                    <h1 class="text-4xl font-extrabold"> Deal of the day</h1>
+                    <p>Stanford University (officially Leland Stanford Junior University)[12][13] is a private research university in Stanford, California. The campus occupies 8,180 acres (3,310 hectares), among the largest in the United States, and enrolls over 17,000 students.[14] Stanford is widely considered to be one of the most prestigious universities in the world.[a] It was founded in 1885 by Leland and Jane Stanford in memory of their only child, Leland Stanford Jr., who had died of typhoid fever the previous year.[2] Leland was a U.S. .</p>
+
+                </div>
+                <div class="">
+                    <div class="flex gap-5 items-center">
+
+                        <div>
+                          <span class="countdown font-mono text-4xl font-extrabold">
+                            <span style="--value:15;"></span>
+                          </span>
+                          days
+                        </div> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+
+
+
+                        <div>
+                          <span class="countdown font-mono text-4xl font-extrabold">
+                            <span style="--value:10;"></span>
+                          </span>
+                          hours
+                        </div> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        <div>
+                          <span class="countdown font-mono text-4xl font-extrabold">
+                            <span style="--value:24;"></span>
+                          </span>
+                          min
+                        </div> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M12 6.75C11.8011 6.75 11.6103 6.67098 11.4697 6.53033C11.329 6.38968 11.25 6.19891 11.25 6C11.25 5.80109 11.329 5.61032 11.4697 5.46967C11.6103 5.32902 11.8011 5.25 12 5.25C12.1989 5.25 12.3897 5.32902 12.5303 5.46967C12.671 5.61032 12.75 5.80109 12.75 6C12.75 6.19891 12.671 6.38968 12.5303 6.53033C12.3897 6.67098 12.1989 6.75 12 6.75ZM12 12.75C11.8011 12.75 11.6103 12.671 11.4697 12.5303C11.329 12.3897 11.25 12.1989 11.25 12C11.25 11.8011 11.329 11.6103 11.4697 11.4697C11.6103 11.329 11.8011 11.25 12 11.25C12.1989 11.25 12.3897 11.329 12.5303 11.4697C12.671 11.6103 12.75 11.8011 12.75 12C12.75 12.1989 12.671 12.3897 12.5303 12.5303C12.3897 12.671 12.1989 12.75 12 12.75ZM12 18.75C11.8011 18.75 11.6103 18.671 11.4697 18.5303C11.329 18.3897 11.25 18.1989 11.25 18C11.25 17.8011 11.329 17.6103 11.4697 17.4697C11.6103 17.329 11.8011 17.25 12 17.25C12.1989 17.25 12.3897 17.329 12.5303 17.4697C12.671 17.6103 12.75 17.8011 12.75 18C12.75 18.1989 12.671 18.3897 12.5303 18.5303C12.3897 18.671 12.1989 18.75 12 18.75Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        <div>
+                          <span class="countdown font-mono text-4xl font-extrabold">
+                            <span style="--value:46;"></span>
+                          </span>
+                          sec
+                        </div>
+                       
+
+                      </div>
+
+                </div>
+            </div>
+        </section>
+       
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10">
+       
+            
+              <div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-3xl font-bold">12.90$ - 18.85$</h2>
+                      <p>Apples</p>
+                      <!-- rating -->
+                      <div class="rating">
+                        <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"  />
+                        <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" checked />
+                      </div>
+              
+                     
+                            <a href=""class="text-[#F85559]" onclick="my_modal_1.showModal()">Details</a>
+                            <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                             
+                                <div class="card">
+                                    <figure class="px-10 pt-10">
+                                      <img src="fruit6.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                      <h2 class="card-title">Apples</h2>
+                                      Stanford University (officially Leland Stanford Junior University)[12][13] is a private research university in Stanford, California. The campus occupies 8,180 acres (3,310 hectares), among the largest in the United States, and enrolls over 17,000 students.[14] Stanford is widely considered to be one of 
+                                   
+                                      <div class="rating">
+                                        <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400"  />
+                                        <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" checked />
+                                      </div>
+
+
+
+                                      <div class="card-actions">
+                                        <button class="btn ">close</button>
+                                        <button class="btn bg-[#F85559] text-white">Buy Now</button>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+
+                    
+                            </div>
+                      </form>
+                            </dialog>
+                     
+                    <!-- </div> -->
+                  </div>
+              </div>
+              <!--  -->
+              <div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="fruit7.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-3xl font-bold">12.90$ - 18.85$</h2>
+                      <p>Apples</p>
+                  
+                      <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+             
+                     <a href="#" class="text-[#F85559]" onclick="my_modal_2.showModal()">Details</a>
+                            <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                
+                                <div class="card">
+                                    <figure class="px-10 pt-10">
+                                      <img src="fruit7.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                      <h2 class="card-title">Apples</h2>
+                                      Stanford University (officially Leland Stanford Junior University)[12][13] is a private research university in Stanford, California. The campus occupies 8,180 acres (3,310 hectares), among the largest in the United States, and enrolls over 17,000 students.[14] Stanford is widely considered to be one of the most prestigious universities in the world.[a
+                                      <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                      </div>
+
+
+
+                                      <div class="card-actions">
+                                        <button class="btn ">close</button>
+                                        <button class="btn bg-[#F85559] text-white">Buy Now</button>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+
+                    
+                            </div>
+                      </form>
+                            </dialog>
+              
+                  </div>
+              </div>
+              <!--  -->
+              <div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="fruit8.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-3xl font-bold">12.90$ - 18.85$</h2>
+                      <p>Apples</p>
+                      <!-- rating -->
+                      <div class="rating">
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400"  checked/>
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                 
+                     <a href="#" class="text-[#F85559]" onclick="my_modal_3.showModal()">Details</a>
+                            <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                            
+                                <div class="card">
+                                    <figure class="px-10 pt-10">
+                                      <img src="fruit8.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                      <h2 class="card-title">Apples</h2>
+                                  
+                                      Stanford University (officially Leland Stanford Junior University)[12][13] is a private research university in Stanford, California.
+                                      <div class="rating">
+                                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400"  checked/>
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                                      </div>
+
+
+
+                                      <div class="card-actions">
+                                        <button class="btn ">close</button>
+                                        <button class="btn bg-[#F85559] text-white">Buy Now</button>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+
+                    
+                            </div>
+                      </form>
+                            </dialog>
+   
+                  </div>
+              </div>
+              <!--  -->
+              <div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="fruit9.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-3xl font-bold">12.90$ - 18.85$</h2>
+                      <p>Apples</p>
+                
+                      <div class="rating">
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400"  />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                      </div>
+                   
+                     <a href="#" class="text-[#F85559]" onclick="my_modal_4.showModal()">Details</a>
+                            <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                           
+                                <div class="card">
+                                    <figure class="px-10 pt-10">
+                                      <img src="fruit9.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                      <h2 class="card-title">Apples</h2>
+                                      Rocky MountainsRocky MountainsRocky MountainsRocky MountainsRocky MountainsRocky MountainsRocky Mountains
+                               
+                                      <div class="rating">
+                                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400"  />
+                                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" checked />
+                                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                                      </div>
+
+
+
+                                      <div class="card-actions">
+                                        <button class="btn ">close</button>
+                                        <button class="btn bg-[#F85559] text-white">Buy Now</button>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+
+                    
+                            </div>
+                      </form>
+                            </dialog>
+                     
+                    <!-- </div> -->
+                  </div>
+              </div>
+              <!--  -->
+              
+        
+        </div>
+        <div class="flex justify-center my-20">
+            <button class="btn bg-[#F85559] text-white rounded-lg">Shop All</button>
+        </div>
+    
+        <section>
+            <div class="hero min-h-screen" style="background-image: url(./images/team.png);">
+                <div class="hero-overlay"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="space-y-4 text-center">
+                    <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+                    <p class="mb-5">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, debitis?
+                    </p>
+                    <div class="grid grid-cols-1 lg:grid-cols-4 gap-20 pt-10 text-center">
+                        <div class="">
+                           <div class="flex justify-center">
+                            <img class="w-36 rounded-full" src="member1.png" alt="">
+                           </div>
+                            <h2 class="text-3xl font-medium">Jack Dsouzza</h2>
+                            <p>Fruits Expert</p>
+                            <div class="grid grid-cols-3 space-x-3">
+                                <div class="bg-[#F85559] rounded-full">
+                                   <a href=""><i class="fa-brands fa-facebook"></i></a> 
+                                </div>
+                                <div class="bg-[#F85559] rounded-full">
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                                <div class="bg-[#F85559] rounded-full">
+                                   <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--2  -->
+                        <div class="">
+                           <div class="flex justify-center">
+                            <img class="w-36 rounded-full" src="member2.png" alt="">
+                           </div>
+                            <h2 class="text-3xl font-medium">Ariana Aril</h2>
+                            <p>Fruits Expert</p>
+                            <div class="grid grid-cols-3 space-x-3">
+                                <div class="bg-[#F85559] rounded-full">
+                                   <a href=""><i class="fa-brands fa-facebook"></i></a> 
+                                </div>
+                                <div class="bg-[#F85559] rounded-full">
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                                <div class="bg-[#F85559] rounded-full">
+                                   <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div>
+                            <div class="flex justify-center">
+                                <img class="w-36 rounded-full" src="member3.png" alt="">
+                               </div>
+                            <h2 class="text-3xl font-medium">Elon mask</h2>
+                            <p>Fruits Expert</p>
+                            <div class="grid grid-cols-3 space-x-3">
+                                <div class="bg-[#F85559] rounded-full">
+                                   <a href=""><i class="fa-brands fa-facebook"></i></a> 
+                                </div>
+                                <div class="bg-[#F85559] rounded-full">
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                                <div class="bg-[#F85559] rounded-full">
+                                   <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div>
+                            <div class="flex justify-center">
+                                <img class="w-36 rounded-full" src="member4.png" alt="">
+                               </div>
+                            <h2 class="text-3xl font-medium">Mark zakarbarg</h2>
+                            <p>Fruits Expert</p>
+                            <div class="grid grid-cols-3 space-x-3">
+                                <div class="bg-[#F85559] rounded-full">
+                                   <a href=""><i class="fa-brands fa-facebook"></i></a> 
+                                </div>
+                                <div class="bg-[#F85559] rounded-full">
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                                <div class="bg-[#F85559] rounded-full">
+                                   <a href=""> <i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+    
+                      </div>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+        </section>
+     
+
+        <div class="our-view">
+          
+        <section class="mt-20">
+          <div class="text-center space-y-5">
+            <h1 class="text-5xl font-bold">Why Choose Us</h1>
+            <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+     
+          <div class="flex justify-between flex-col lg:flex-row">
+            <!-- first col -->
+              <div class="flex-col gap-y-10">
+                <div class="space-y-3">
+                  <div class="flex gap-2 items-center">
+                    <i class="fa-solid fa-users w-14"></i>
+                    <h2 class="text-2xl font-bold">Dedicated Team</h2>
+                  </div>
+                  <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+                </div>
+                <!--  -->
+                <div>
+                  <div class="flex gap-2 items-center">
+                    <i class="fa-solid fa-heart w-14"></i>
+                    <h2 class="text-2xl font-bold">Fresh is Best</h2>
+                  </div>
+                  <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+                </div>
+                <!--  -->
+                <div class="">
+                  <div class="flex gap-2 items-center">
+                    <i class="fa-solid fa-users w-14"></i>
+                    <h2 class="text-2xl font-bold">Gift Certificates</h2>
+                  </div>
+                  <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+              <!-- 2nd col -->
+              <div class="pt-7">
+                <img  src="whychoose1.png" alt="">
+
+              </div>
+              <!--3rd col  -->
+              <div class="flex-col gap-y-30 justify-items-end">
+                <div class="space-y-3">
+                  <div class="flex gap-2 items-center">
+                    <i class="fa-solid fa-users w-14"></i>
+                    <h2 class="text-2xl font-bold">Integrated Supplier</h2>
+                  </div>
+                  <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+                </div>
+                <!--  -->
+                <div>
+                  <div class="flex gap-2 items-center">
+                    <i class="fa-solid fa-users w-14"></i>
+                    <h2 class="text-2xl font-bold">Sustainable Practice</h2>
+                  </div>
+                  <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+                </div>
+                <!--  -->
+                <div>
+                  <div class="flex gap-2 items-center">
+                    <i class="fa-solid fa-thumbs-up w-14"></i>
+                    <h2 class="text-2xl font-medium">The Benefits Only</h2>
+                  </div>
+                  <p>Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+
+
+          </div>
+        </section>
+        </div>
+
+
+    </main>
+    <footer class=" p-10  mt-20 bg-[#121212] text-white">
+        <div class="flex lg:flex-row flex-col gap-x-4 justify-center items-center">
+            <img class="w-14" src="logo.png" alt="">
+            <h2 class="text-5xl font bold">Fruit Ninja</h2>
+        </div>
+
+             <div class="flex lg:flex-row flex-wrap gap-4 justify-center my-7 footer-menu">
+
+            <a class="link link-hover">home</a> 
+          <a class="link link-hover">About us</a> 
+          <a class="link link-hover">shop</a> 
+          <a class="link link-hover">All fruits</a> 
+          <a class="link link-hover">support</a>
+          <a class="link link-hover">my account</a>
+        </div> 
+        <!-- <div class="grid lg:grid-cols-6 grid-cols-4 gap-9 justify-center">  -->
+        <div class=" for-col flex lg:flex-row flex-wrap justify-center gap-7">
+          <a href="">  <i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+           <a href=""> <i class="fa-brands fa-youtube"></i></a>
+          <a href="">  <i class="fa-brands fa-instagram"></i></a>
+           <a href=""> <i class="fa-brands fa-apple"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    
+      </footer>
+    
+</body>
+</html>
+
